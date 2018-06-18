@@ -1,0 +1,50 @@
+/*
+
+selector {
+  property: value;
+  other-property: other value;
+}
+
+*/
+body {
+  background-color: limegreen;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  padding: 35px;
+  margin: 120px;
+}
+
+a {
+  color: white;
+}
+
+
+
+/* Multiple Selectors */
+h1, h2, h3, h4, h5, h6 {
+  background-color: white;
+  text-align: center;
+  text-shadow: 5px 5px 5px rgba(0,0,0,0.25);
+}
+
+img {
+  border-radius: 50%; /* circle */
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+  width: 50%;
+  margin: auto; /* centered */
+  display: block;
+}
+
+p.fancy {
+  color: pink;
+  font-size: 200%;
+  font-style: normal;
+}
+
+
+p {
+  font-style: italic;
+}
