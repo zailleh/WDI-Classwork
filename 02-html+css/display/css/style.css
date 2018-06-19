@@ -1,0 +1,55 @@
+/* display property code along */
+body {
+  background-color: teal;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 300px; /* vertical centering */
+  /* display: block */ /* this is the default */
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+  /* cannot set width, height or margins */
+}
+
+.inline-block {
+  display: inline-block;
+  /* displayed in line but can set width and height */
+}
+
+.none {
+  display: none;
+  /* is not displayed and can't be found in the page */
+}
+
+.hidden {
+  visibility: hidden;
+}
+/* Descendent selector */
+.spooky span {
+  visibility: hidden;
+  color: black;
+  opacity: 0;
+}
+
+/* Pseudoselector */
+.spooky:hover {
+  background: #000000
+
+}
+.spooky:hover span {
+  opacity: 1;
+  visibility: visible;
+  color: yellow;
+  transition: 2s all;
+
+}
