@@ -1,0 +1,20 @@
+/* display property code along */
+body {
+  background-color: teal;
+  min-height: 3000px;
+}
+
+.old {
+  width: 198px;
+  height: 198px;
+  border: 1px solid black;
+  padding: 50px;
+}
+
+.new {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  padding: 50px;
+  box-sizing: border-box;
+}
