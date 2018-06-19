@@ -109,3 +109,15 @@ const printMovieInfo = function ( movie ) {
 }
 
 console.log( printMovieInfo( myImdb ) );
+
+
+
+
+
+// Bizarrow World: Prototypal inheritance
+
+// const Cat = function (n, a, fc) {
+//   this.name = n;
+//   this.age = a;
+//   this.fc = fc;
+// }
