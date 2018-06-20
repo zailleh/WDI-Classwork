@@ -17,7 +17,7 @@ const values = {
 
 
 const scrabble = function ( word ) {
-  word = word.toUpperCase().split("");
+  word = word.toUpperCase() // convert word to uppercase for matching against scores
   let totalScore = 0;
 
   // loop through each letter
