@@ -1,0 +1,16 @@
+header {
+  text-align: center;
+}
+
+
+header {
+  transition: .5s all;
+  font-size: 300%;
+  background-color: grey;
+  border-radius: 3rem;
+}
+
+header.begin {
+  font-size: 500%;
+  background-color: red;
+}
