@@ -30,8 +30,7 @@ class MarxBrother < Actor # MarxBrother Inherits from Actor
 end
 
 class Stooge < Actor
-  def initialize
-  end
+
 
   def terrible?
     true
