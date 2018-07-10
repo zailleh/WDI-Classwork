@@ -1,0 +1,7 @@
+<h1>Stock Quote Home</h1>
+
+<%= form_tag('/stocks/info', method: :get) do %>
+  <%= label_tag(:stock, "Search for:") %>
+  <%= text_field_tag(:stock) %>
+  <%= submit_tag("Search") %>
+<% end %>

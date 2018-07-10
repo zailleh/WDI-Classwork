@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Books And Stocks</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="container">
+      <nav>
+        <a href="/">Home</a>
+        <a href="/books">Book Search</a>
+        <a href="/stocks">Stock Search</a>
+      </nav>
+      <main>
+        <%= yield %>
+      </main>
+    </div>
+  </body>
+</html>

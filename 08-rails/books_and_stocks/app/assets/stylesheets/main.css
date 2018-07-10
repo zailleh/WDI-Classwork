@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(#888,#444)
+}
+.container {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: grid;
+  grid-template-rows: 3em auto;
+}
+
+nav {
+  background: linear-gradient(90deg, #44F, #AAF);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  padding: .5em;
+  margin: .25em;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: white;
+  color: black;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* align-content: */
+  padding: 1em
+}
+
+.book, .stock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 680px;
+  width: 40vw;
+  padding: 1em;
+  background-color: white;
+  border-radius: .5em;
+  box-shadow: 2px 2px rgba(0,0,0,.25)
+}

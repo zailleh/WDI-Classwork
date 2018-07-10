@@ -1,0 +1,13 @@
+<div class="book">
+  <% if !@thumbnail_url.nil? %>
+  <img src="<%= @thumbnail_url%>" />
+  <ul>
+    <li>Title: <%= @title %></li>
+    <li>Author(s): <%= @author %></li>
+  </ul>
+  <p><%= @description %></p>
+  <% elsif  @total_items == 0 %>
+  <p>We couldn't find a book matching your search</p>
+  <% end %>
+  <a href="/books">Search Again</a>
+</div>

@@ -1,0 +1,8 @@
+<h1>Book Search Home</h1>
+
+
+<%= form_tag('/books/info', method: :get) do %>
+  <%= label_tag(:book, "Search for:") %>
+  <%= text_field_tag(:book) %>
+  <%= submit_tag("Search") %>
+<% end %>
