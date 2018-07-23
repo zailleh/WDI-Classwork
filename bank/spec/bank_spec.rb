@@ -37,6 +37,22 @@ describe Bank do
 
       expect(bank.accounts['Craigsy']).to eq (200 - 100);
     end
+
+    it "cannot withdraw more than the balance" do
+      bank.create_account 'Craigsy', 1
+      bank.withdraw 'Craigsy', 1_000_000
+
+      expect(bank.balance 'Craigsy' ).to eq 1
+    end
+  end
+
+  describe '#balance' do
+    it "returns balance for some account" do
+      bank.create_account 'Craigsy', 200
+      
+      expect(bank.balance 'Craigsy').to eq 200
+    end
+
   end
 
 end
