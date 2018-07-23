@@ -1,0 +1,18 @@
+<h1><%= @artist.name %></h1>
+
+<ul class="details">
+  <li>Nationality: <%= @artist.nationality %></li>
+  <li>Date of Birth: <%= @artist.dob.strftime '%A, %B %e, %Y' %></li>
+  <li>Period: <%= @artist.period %></li>
+</ul>
+<%= image_tag @artist.image, :alt => @artist.name, :class => 'feature' %>
+<div class="controls">
+  <%= link_to 'Edit', edit_artist_path(@artist) %>
+  <%= link_to 'Delete', artist_path(@artist), :method => 'delete', :data => {:confirm => "Are you sure you want to delete poor old #{ @artist.name }"} %>
+</div>
+
+<div class="index">
+  <% @artist.works.each do |w| %>
+  <%= link_to image_tag(w.image, :class => 'thumb'), w %>
+  <% end %>
+</div>

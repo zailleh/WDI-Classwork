@@ -1,0 +1,18 @@
+<h1>New Planet</h1>
+
+<%= form_tag(planet_path(@p.id), method: "post") do %>
+  <label for="">Name:</label>
+  <input type="text" name="name" required value="<%= @p.name %>" autofocus>
+  <label for="">Image:</label>
+  <input type="url" name="image" value="<%= @p.image %>">
+  <label for="">Orbit:</label>
+  <input type="number" name="orbit" value="<%= @p.orbit %>">
+  <label for="">Diameter:</label>
+  <input type="number" name="diameter" value="<%= @p.diameter %>">
+  <label for="">Mass:</label>
+  <input type="number" name="mass" value="<%= @p.mass %>">
+  <label for="">Moons:</label>
+  <input type="number" name="moons" value="<%= @p.moons %>">
+  <button>Save Changes</button>
+<% end %>
+

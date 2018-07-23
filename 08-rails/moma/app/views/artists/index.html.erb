@@ -1,0 +1,14 @@
+<h1>All Artists</h1>
+<div class="index">
+  <% @artists.each do |a| %>
+    <div class="card">
+    <%= image_tag a.image, :alt => a.name, :class => 'thumb' %>
+    <ul>
+      <li><%= link_to a.name, a %></li>
+      <li><%= a.nationality %></li>
+      <li><%= a.dob.strftime '%A, %B %e, %Y' %></li>
+      <li><%= a.period %></li>
+    </ul>
+    </div>
+  <% end %>
+</div>

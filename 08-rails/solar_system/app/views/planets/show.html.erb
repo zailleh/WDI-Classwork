@@ -1,0 +1,28 @@
+<h1><%= @planet.name %></h1>
+<%= image_tag @planet.image, :class => 'feature' unless @planet.image.nil? %>
+
+<table>
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Orbit</td>
+      <td>Diameter</td>
+      <td>Mass</td>
+      <td>Moons</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= @planet.name %></td>
+      <td><%= @planet.orbit %></td>
+      <td><%= @planet.diameter %></td>
+      <td><%= @planet.mass %></td>
+      <td><%= @planet.moons %></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="controls">
+  <%= button_to 'Delete Planet', planet_path(@planet.id), :method => 'delete' %>
+  <%= button_to 'Edit Planet', planet_edit_path(@planet.id), :method => 'get' %>
+</div>

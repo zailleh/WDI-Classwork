@@ -1,0 +1,57 @@
+// Place all the styles related to the Artists controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url('https://fonts.googleapis.com/css?family=Satisfy|Swanky+and+Moo+Moo');
+
+
+body {
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+  background-color: grey;
+}
+
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.thumb {
+  max-height: 8em;
+}
+
+.feature {
+  max-width: 100%
+}
+
+.details {
+  list-style: none;
+  font-size: 1.25em;
+}
+
+.index {
+  max-width: 960px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 2em;
+}
+
+.card {
+  text-align: left;
+  background-color: lightgrey;
+  border-radius: .2em;
+  // border: 1px solid  rgba(0,0,0,.04);
+  box-shadow: .2em .2em .2em rgba(0,0,0,.25);
+  margin: .4em auto;
+  padding: .4em;
+  h2, h1, img {
+    display: block;
+    text-align: center;
+    margin: .25em auto;
+    font-family: 'Swanky and Moo Moo', cursive;
+  }
+}

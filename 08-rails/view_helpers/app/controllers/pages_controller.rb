@@ -4,7 +4,9 @@ class PagesController < ApplicationController
   end
   
   def numbers
-    
+    @amount = 123.123124
+    @large_amount = 132908423429837423
+    @phone_number = 283658935
 
     render :numbers
   end

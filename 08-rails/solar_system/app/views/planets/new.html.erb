@@ -1,0 +1,18 @@
+<h1>New Planet</h1>
+
+<%= form_tag(planets_path, method: "post") do %>
+  <label for="">Name:</label>
+  <input type="text" name="name" required>
+  <label for="">Image:</label>
+  <input type="url" name="image">
+  <label for="">Orbit:</label>
+  <input type="number" name="orbit">
+  <label for="">Diameter:</label>
+  <input type="number" name="diameter">
+  <label for="">Mass:</label>
+  <input type="number" name="mass">
+  <label for="">Moons:</label>
+  <input type="number" name="moons">
+  <button>Create Planet</button>
+<% end %>
+

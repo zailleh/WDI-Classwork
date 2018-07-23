@@ -1,0 +1,17 @@
+<div class="card">
+  <h1><%= @work.title %></h1>
+  <%= image_tag(@work.image, :alt => @work.title, :class => 'feature')%>
+  <ul class="details">
+    <% if @work.artist.present? %>
+      <li>By: <%= link_to @work.artist.name, @work.artist %></li>
+    <% end %>
+    <li>Year: <%= @work.year %></li>
+    <li>Medium: <%= @work.medium %></li>
+    <li>Style: <%= @work.style %></li>
+  </ul>
+
+  <div class="controls">
+    <%= link_to 'Edit', edit_work_path(@work) %>
+    <%= link_to 'Delete', work_path(@work), :method => 'delete', :data => {:confirm => 'Burn this arwork in hellfire?'} %>
+  </div>
+</div>
