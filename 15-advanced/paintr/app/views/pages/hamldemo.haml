@@ -1,0 +1,15 @@
+%h1.title.thursday#some_id Hello World!
+
+%h2.lucky= @number
+
+%div.container
+  %p 
+    Here's a paragraph
+    %span This is a spanny-span
+  %p here's a new paragraph!
+
+%div.container
+  %ul
+    - %w{ Groucho Harpo Chico Zeppo }.each do |bro|
+      %li= bro
+  

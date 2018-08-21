@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  text-align: center;
+  background-color: darkslategray;
+  color: white;
+}
+
+.secret {
+  width: 960px;
+  padding: 1em;
+  background-color: lightgrey;
+  margin: .5em auto;
+  color: #444
+  
+}
+
+form {
+  font-size: 1rem;
+}
+#secret {
+  resize: none;
+  width: 300px;
+  height: 3em;
+  font-size: inherit;
+  margin-bottom: -1.1em;
+  box-sizing: border-box;
+}
+
+#tell {
+  height: 3em;
+  background-color: slateblue;
+  border: none;
+  font-size: inherit;
+  color: white;
+  box-sizing: border-box;
+  padding: .5em;
+}

@@ -1,0 +1,50 @@
+.container {
+  display:grid;
+  grid-template-columns: repeat(8, 1fr);
+  width: 960px;
+  height: 960px;
+  margin: 0 auto;
+}
+
+.square {
+  width: calc(960px/8);
+  height: calc(960px/8);
+  border: 1px solid black;
+}
+
+.robot {
+  box-sizing: border-box;
+  width: calc(960px / 9);
+  height: calc(960px / 9);
+  margin: auto auto;
+}
+
+.up {
+  border-top: 0;
+  border-bottom: 84px solid red;
+  border-left: 53px solid transparent;
+  border-right: 53px solid transparent;
+}
+
+
+.down {
+  border-top: 84px solid red;
+  border-bottom: 0;
+  border-left: 53px solid transparent;
+  border-right: 53px solid transparent;
+}
+
+.left {
+  border-top: 53px solid transparent;
+  border-bottom: 53px solid transparent;
+  border-left: 0;
+  border-right: 84px solid red;
+}
+
+
+.right {
+  border-top: 53px solid transparent;
+  border-bottom: 53px solid transparent;
+  border-right: 0;
+  border-left: 84px solid red;
+}

@@ -1,0 +1,20 @@
+.pixel {
+  float:left;
+  width: 1em;
+  height: 1em;
+  border: 1px solid lightgrey;
+  margin: 0;
+  padding: 0;
+}
+
+.swatch {
+  width: 2em;
+  height: 2em;
+  border-radius: 0.25em;
+  border: 1px solid grey;
+  display: inline-block;
+}
+
+.swatch.active {
+  border: 2px solid red;
+}

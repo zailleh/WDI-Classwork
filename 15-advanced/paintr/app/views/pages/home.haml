@@ -1,0 +1,9 @@
+%h1 Welcome home!
+= color_field_tag :color, '#FFFFFF', :autofocus => true
+= button_tag 'Add', :id => 'add-color'
+
+%div.pallet
+
+%div.canvas
+  - 10_000.times do
+    %div.pixel

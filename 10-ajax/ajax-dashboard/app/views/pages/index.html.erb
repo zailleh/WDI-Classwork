@@ -1,0 +1,5 @@
+<h1>Dashboard</h1>
+
+<p>Brother: <span id="brother"><%= %w{ Groucho Harpo Chico Gummo Zeppo }.sample %></span></p>
+<p>Time: <span id="time"><%= Time.now.strftime("%m/%d/%Y %I:%M:%S%p") %></span></p>
+<p>Uptime: <span id="uptime"><%= `uptime` %></span></p>
